@@ -5,32 +5,24 @@
 
 import java.util.Scanner;
 public class Main {
-
     public static void main(String[] args ){
 
-
-       Main main = new Main();
+        Main main = new Main();
 
         main.compute();
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter name: ");
-        String name = scanner.nextLine();
-
-
     }
 
     public void compute() {
-        
-
-        if(name == "Bob"){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter name: ");
+        String name = scanner.nextLine();
+        if(name.equals("Bob")){
             System.out.println("Hello Bob!");
-        }else if(name == "Alice"){
-            System.out.println("Hello Alice");
+        }else if(name.equals("Alice")){
+            System.out.println("Hello Alice!");
         }else{
             System.out.println("You are neither Alice or Bob");
         }
-
-
+        scanner.close();
     }
 }
